@@ -1,6 +1,3 @@
-{% load static %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,29 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static 'newsapp/css/style.css' %} ">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>{{ title }}</title>
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <ul>
-                <li> <a href="#"> Home </a> </li>
-                <li> <a href="#"> Life style &nbsp; <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> fashion &nbsp; <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> quizzes &nbsp; <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> travel &nbsp; <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> rss news &nbsp; <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> videos &nbsp;  <i class="fas fa-chevron-down"></i> </a> </li>
-                <li> <a href="#"> gallery </a> </li>
-                <li> <a href="#"> buy now </a> </li>
-            </ul> 
+        <div class="padding top">
+            <div class="cont__about">
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <div class="log">
+                <span><a href="#">Login </a> &nbsp; / <a href="#">&nbsp; Register</a></span>
+
+                <span>
+                    <i class="fas fa-globe-americas"></i> English &nbsp; <i class="fas fa-chevron-down"></i>
+                </span>
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
-        <i class="fas fa-search"></i>
+        <div class="menu padding ">
+            <ul>
+                <li> 
+                    <a href="#"> Home </a> 
+                    <span class="under"></span>
+                </li>
+                <li>
+                    <a href="#"> Life style <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+                <li>
+                    <a href="#"> fashion <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+
+                <li>
+                    <a href="#"> quizzes <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+                <li>
+                    <a href="#"> travel <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+                <li>
+                    <a href="#"> rss news <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+                <li>
+                    <a href="#"> videos <i class="fas fa-chevron-down"></i> </a>
+                    <span class="under"></span>
+                </li>
+                <li> 
+                    <a href="#"> gallery </a>
+                    <span class="under"></span>
+                 </li>
+                <li> 
+                    <a href="#"> buy now </a> 
+                    <span class="under"></span>
+                </li>
+            </ul>
+            <i class="fas fa-search"></i>
+        </div>
     </header>
+    <section class="padding section1">
+        <div class="images">
+            <div>
+                <span class="tag">
+                    Photography
+                </span>
+                <div class="tema">
+                    <h2> <a href="#"> Koreyada studentlar uchun yangi imkoniyatlar berildi</a></h2>
+                    <p>admin jun 27,2021 <i class="fad fa-comments"></i> 16 <i class="far fa-eye"> 1640</i></p>
+                </div>
+            </div>
+            <div>
+                <span class="tag" style="background-color: #30b233">
+                    Fashion
+                </span>
+                <div class="tema__little">
+                    <h4> <a href="#"> Koreyada studentlar uchun yangi imkoniyatlar berildi</a></h4>
+                    <p>admin jun 27,2021 <i class="fad fa-comments"></i> 16 <i class="far fa-eye"> 1640</i></p>
+                </div>
+            </div>
+            <div>
+                <span class="tag">
+                    Photography
+                </span>
+                <div class="tema__little">
+                    <h4> <a href="#"> Koreyada studentlar uchun yangi imkoniyatlar berildi</a></h4>
+                    <p>admin jun 27,2021 <i class="fad fa-comments"></i> 16 <i class="far fa-eye"> 1640</i></p>
+                </div>
+            </div>
+            <div>
+                <span class="tag" style="background-color: #e44e4e">
+                    Design
+                </span>
+                <div class="tema__little">
+                    <h4> <a href="#"> Koreyada studentlar uchun yangi imkoniyatlar berildi</a></h4>
+                    <p>admin jun 27,2021 <i class="fad fa-comments"></i> 16 <i class="far fa-eye"> 1640</i></p>
+                </div>
+            </div>
+            <div>
+                <span class="tag" style="background-color: #04abd8">
+                    Places
+                </span>
+                <div class="tema__little">
+                    <h4> <a href="#"> Koreyada studentlar uchun yangi imkoniyatlar berildi</a></h4>
+                    <p>admin jun 27,2021 <i class="fad fa-comments"></i> 16 <i class="far fa-eye"> 1640</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var images = document.getElementsByClassName("images")
+    </script>
 </body>
 
 </html>
