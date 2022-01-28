@@ -1,3 +1,7 @@
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
 body, html {
     padding: 0;
     margin: 0;
@@ -79,14 +83,7 @@ ul, li {
     justify-content: center;
 }
 
-.menu ul li span {
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -0.8em;
-    border-radius: 10px;
-    background-color: #19bc9c;
-}
+
 
 .menu li {
     position: relative;
@@ -97,15 +94,21 @@ ul, li {
     font-size: 0.9rem;
     margin-left: 0.5em;
 }
+.menu ul li span {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -0.8em;
+    border-radius: 10px;
+    background-color: #19bc9c;
+}
 
-.menu ul li:hover span::after {
+.menu ul li:hover span {
     content: "";
     position: absolute;
     width: 110%;
     align-self: flex-start;
-    transition: 0.4s transform;
-    transform: scaleX(0);
-    transform-origin: right;
+    transition: 0.4s all;
 }
 
 .menu ul~i {
@@ -219,6 +222,57 @@ ul, li {
 .section1 .tema__little h4:hover, .tema h2:hover{
     text-decoration: underline;
 }
+
+/* news */
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-top: 0;
+}
+.section2 .breaking__news{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #161616;
+    margin-bottom: 1.7em;
+}
+.section2 .break{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.section2 .breaking__news p:first-child{
+    padding: 10px;
+    color: #fff;
+    background-color: #161616;
+}
+
+.section2 img{
+    height: 200px;
+}
+.section2 .breaking__news div:last-child{
+    display: flex;
+    gap: .6em;
+}
+.section2 .breaking__news i{
+    border: 1px solid #d9d9d9;
+    padding: 1em;
+    border-radius: .2em;
+    font-size: 1.4rem;
+    color: #727272;
+
+}
+.section2 .break p:first-child{
+    margin-right: 1em;
+}
+.section2 .break p:last-child{
+    font-size: 1.4rem;
+}
+/* news__end */
+
 
 
 /* section1-end */
